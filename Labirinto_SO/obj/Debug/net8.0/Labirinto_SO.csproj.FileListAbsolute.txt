@@ -1,0 +1,14 @@
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\bin\Debug\net8.0\Labirinto_SO.exe
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\bin\Debug\net8.0\Labirinto_SO.deps.json
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\bin\Debug\net8.0\Labirinto_SO.runtimeconfig.json
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\bin\Debug\net8.0\Labirinto_SO.dll
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\bin\Debug\net8.0\Labirinto_SO.pdb
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\obj\Debug\net8.0\Labirinto_SO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\obj\Debug\net8.0\Labirinto_SO.AssemblyInfoInputs.cache
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\obj\Debug\net8.0\Labirinto_SO.AssemblyInfo.cs
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\obj\Debug\net8.0\Labirinto_SO.csproj.CoreCompileInputs.cache
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\obj\Debug\net8.0\Labirinto_SO.dll
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\obj\Debug\net8.0\refint\Labirinto_SO.dll
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\obj\Debug\net8.0\Labirinto_SO.pdb
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\obj\Debug\net8.0\Labirinto_SO.genruntimeconfig.cache
+C:\Users\wh341\Documents\estudos\Labirinto_SO\Labirinto_SO\obj\Debug\net8.0\ref\Labirinto_SO.dll
