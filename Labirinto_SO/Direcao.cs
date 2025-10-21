@@ -1,4 +1,4 @@
-﻿namespace Labirinto_SO;
+﻿namespace Teste;
 
 public class Direcao
 {
@@ -10,7 +10,7 @@ public class Direcao
         Linha = linha;
         Coluna = coluna;
     }
-    
+
     public static Direcao Cima = new(-1, 0);
     public static Direcao Baixo = new(1, 0);
     public static Direcao Esquerda = new(0, -1);
@@ -18,7 +18,7 @@ public class Direcao
 
     private static List<Direcao> Todas = new() { Cima, Baixo, Esquerda, Direita };
     private static Random _random = new();
-    
+
     public static List<Direcao> ObterDirecoesAleatorias()
     {
 
@@ -29,7 +29,7 @@ public class Direcao
         while (n > 1)
         {
             n--;
-            int k = _random.Next(n + 1); 
+            int k = _random.Next(n + 1);
 
 
             Direcao temp = direcoesEmbaralhadas[k];
@@ -37,7 +37,7 @@ public class Direcao
             direcoesEmbaralhadas[n] = temp;
         }
 
-        
+
         return direcoesEmbaralhadas;
     }
 }

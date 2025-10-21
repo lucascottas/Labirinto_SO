@@ -1,14 +1,12 @@
-﻿
-using Labirinto_SO;
+﻿using System;
+using Teste;
 
 public class Labirinto
 {
-    // Campos da classe
     private char[,] _mapa;
     private int _altura;
     private int _largura;
-    
-    // Constantes para os símbolos do mapa
+
     public const char PAREDE = '#';
     public const char CAMINHO = ' ';
     public const char QUEIJO = 'Q';
@@ -18,27 +16,30 @@ public class Labirinto
         _altura = (altura % 2 == 0) ? altura + 1 : altura;
         _largura = (largura % 2 == 0) ? largura + 1 : largura;
         _mapa = new char[_altura, _largura];
-        
+
         Gerar();
     }
 
     private void Gerar()
     {
+        // inicializa com paredes
         for (int i = 0; i < _altura; i++)
-        {
             for (int j = 0; j < _largura; j++)
-            {
                 _mapa[i, j] = PAREDE;
-            }
-        }
+
+        // cava o labirinto a partir do queijo
         CavarCaminho(1, 1);
+
+        // garante que há caminho até o canto onde o rato nasce
+        AbrirCaminhoAteCanto(_altura - 2, _largura - 2);
+
+        // define o queijo
         _mapa[1, 1] = QUEIJO;
     }
 
     private void CavarCaminho(int linha, int coluna)
     {
         _mapa[linha, coluna] = CAMINHO;
-
 
         foreach (var direcao in Direcao.ObterDirecoesAleatorias())
         {
@@ -55,15 +56,35 @@ public class Labirinto
         }
     }
 
+    private void AbrirCaminhoAteCanto(int destinoLinha, int destinoColuna)
+    {
+        // Caminho simples (garantido)
+        int linha = 1;
+        int coluna = 1;
+        while (linha < destinoLinha)
+        {
+            linha++;
+            _mapa[linha, coluna] = CAMINHO;
+        }
+        while (coluna < destinoColuna)
+        {
+            coluna++;
+            _mapa[linha, coluna] = CAMINHO;
+        }
+    }
+
     public void Imprimir()
     {
         for (int i = 0; i < _altura; i++)
         {
             for (int j = 0; j < _largura; j++)
-            {
                 Console.Write(_mapa[i, j] + " ");
-            }
             Console.WriteLine();
         }
+    }
+
+    public char[,] ObterMapa()
+    {
+        return _mapa;
     }
 }
