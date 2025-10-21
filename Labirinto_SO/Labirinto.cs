@@ -1,4 +1,3 @@
-﻿
 using Labirinto_SO;
 
 public class Labirinto
